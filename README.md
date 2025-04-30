@@ -98,6 +98,15 @@ FROM (
 	) Best_monthly_performance
 	WHERE _Rank=1;
 ```
+-Five premium customers.
+```sql
+SELECT TOP 5
+	customer_id,
+	SUM(total_sale) AS Total_Business
+FROM Retail_performance
+GROUP BY customer_id
+ORDER BY SUM(total_sale) DESC;
+```
 #### Findings and results
 ---
   - January was the top selling month with Kshs. 75,160.51 while April the lowest at Kshs. 2,870.46.
