@@ -107,6 +107,15 @@ FROM Retail_performance
 GROUP BY customer_id
 ORDER BY SUM(total_sale) DESC;
 ```
+-Product categories performance.
+```sql
+SELECT
+	category,
+	COUNT(DISTINCT(customer_id)) AS Customers,
+	SUM(quantity) Item_sold
+FROM Retail_performance
+GROUP BY category;
+```
 #### Findings and results
 ---
   - January was the top selling month with Kshs. 75,160.51 while April the lowest at Kshs. 2,870.46.
