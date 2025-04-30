@@ -17,12 +17,12 @@
 ### Project Overview
 ---
 
-This project aims to provide aims to provide quickfire business metrics seeking to identify the trends, gain a geveral overview of the sales performance to make  necessary recommendations.
+This project aims to provide quickfire business metrics seeking to identify the trends and gain a geveral overview of the sales performance to make necessary recommendations.
 
 ### Data Sources
 ---
 
-Sales Data: The primary dataset used for this analysis is the "supermarket_sales.csv" file from kaggle.com datasets [Check Here](https://www.kaggle.com/datasets/alexhuitron/supermarket-sales).
+Retail sales Data: The primary dataset used for this analysis is the "Rtail_sales.csv" file from Zero anayst github platform. [Check Here](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2ZGcV9ZLVJlNUJnTkpKX1NyY0xwYWZIQ3pPUXxBQ3Jtc0tsblFDeHotdTIzbEJJNkMwLV81bWpmV0hTOW9TVUZKVnZvdDhhYkFWd2RsV3g5Mm02VC1oQ1VwamZrbDNVc0E3aHYtOXBJYWwyaVJFUEwzdEVUc21rNUwzTTM1Q2NWcDg5OENtcHN5ZWpJOXZKRkU5aw&q=https%3A%2F%2Fgithub.com%2Fnajirh%2FRetail-Sales-Analysis-SQL-Project--P1%2Fblob%2Fmain%2FSQL%2520-%2520Retail%2520Sales%2520Analysis_utf%2520.csv&v=ChIQjGBI3AM).
 
 ### Tools used
 ---
