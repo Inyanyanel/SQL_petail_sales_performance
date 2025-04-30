@@ -6,7 +6,6 @@
 - [Data Sources](#data-sources)
 - [Tools used](#tools-used)
 - [Data preparation](#data-preparation)
-- [Explanatory analysis](#explanatory-analysis)
 - [Data Analysis]($data-analysis)
 - [Findings and results]($findings-and-results)
 - [Recommendations](#recommendations)
@@ -34,13 +33,6 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 - Data loading and inspection.
 - Handling missing values.
 - Data cleaning, formatting and transformation.
-
-### Explanatory analysis
----
-- What was the total sales and profits trend?
--  What were the top selling categories and invoices?
--  What were most preferred payments over the year?
--  What were the top branches and why?
 
 ### Data Analysis
 ---
@@ -139,7 +131,8 @@ ORDER BY Shift;
 
 #### Findings and results
 ---
-  - January was the top selling month with Kshs. 75,160.51 while April the lowest at Kshs. 2,870.46.
+  - Electronics category was the highest selling category (Kshs. 313,810.00) revenue wise followed by clothing (Kshs. 311,070.00) and beauty (Kshs. 286,840.00). Clothing (701 		 
+    items) recorded the most orders followed closely by electronics (684 items) then beauty (612 items).
   - Top sales order was invoice no. 860-79-0874 selling as Kshs. 1,042.65.
   - The profits were predetermined at a margin of 5%.
   - The company experienced boom in sales fo the first quarter then sales dwindeled in the latter quarters.
