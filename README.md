@@ -64,12 +64,13 @@ SELECT *
 FROM Retail_performance
 WHERE total_sale>1000;
 ```
--Transactions made by each gender and category respectively.
+-Revenue and orders made per gender and category respectively.
 ```sql
 SELECT
 	category,
 	gender,
-	COUNT(*) AS Transactions
+	COUNT(*) AS Transactions,
+	SUM(Total_sale) AS Total_sales
 FROM Retail_performance
 GROUP BY category,gender;
 ```
@@ -131,11 +132,11 @@ ORDER BY Shift;
 
 #### Findings and results
 ---
-  - Electronics category was the highest selling category (Kshs. 313,810.00) revenue wise followed by clothing (Kshs. 311,070.00) and beauty (Kshs. 286,840.00). Clothing (701 		 
+  - Electronics category was the highest selling category (313,810.00) revenue wise followed by clothing (311,070.00) and beauty (286,840.00). Clothing (701 		 
     items) recorded the most orders followed closely by electronics (684 items) then beauty (612 items).
   - Beauty products were mostly consumed by middle aged people (Average age 40 years)
   - Just over 15% of total orders recorded sale amounts of Kshs. 1,000.00 and above.
-  - The company experienced boom in sales fo the first quarter then sales dwindeled in the latter quarters.
+  - Ladies led the spending on clothing products (162,460) closely followed by men on Electronics (160,340). Ladies dominated men on expenditure on the rest of the products.
   - Foods and beverage was the top selling category during the year.
   - Branch sales were evenly distributed during the year.
   - Payment modes of cash, credit card and e-wallet were evenly used across the period.
