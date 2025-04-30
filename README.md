@@ -45,9 +45,19 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 
 ### Data Analysis
 ---
-We predominantly used excel functions and formulas as demonstrated below;
+We predominantly used SQL querrying as demonstrated below;
 #### Formulas
-  - Sum-used to get total sales, cost of goods sold and profits.
+  - Sales Amount Categorywise
+'''sql
+SELECT  
+	category,
+	SUM(total_sale) AS Revenue_per_category,
+	COUNT(*) AS No_Of_Orders
+FROM Retail_performance
+GROUP BY category
+ORDER BY 3;
+
+'''
   - Count-used to get total number of transactions.
 ##### Functions
 ---
