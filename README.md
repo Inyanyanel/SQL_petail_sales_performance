@@ -27,7 +27,7 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 ### Tools used
 ---
 
-- Excel - Used to clean, transform, analyse and visualisation.
+- SQL - Used to clean, transform and analyse data.
 
 ### Data preparation
 ---
