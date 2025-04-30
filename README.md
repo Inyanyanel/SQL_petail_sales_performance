@@ -137,7 +137,7 @@ ORDER BY Shift;
   - Beauty products were mostly consumed by middle aged people (Average age 40 years)
   - Just over 15% of total orders recorded sale amounts of Kshs. 1,000.00 and above.
   - Ladies led the spending on clothing products (162,460) closely followed by men on Electronics (160,340). Ladies dominated men on expenditure on the rest of the products.
-  - Foods and beverage was the top selling category during the year.
+  - July was the best selling month in year 2022 with monthly average revenue of 541.34 while February topped year 2023 with 535.53
   - Branch sales were evenly distributed during the year.
   - Payment modes of cash, credit card and e-wallet were evenly used across the period.
   - Alexandria branch dominated on food and beverage sales (47%), Giza on home & lifestyle (43%), Cairo on health & beauty (39%).
