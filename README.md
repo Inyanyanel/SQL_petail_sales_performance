@@ -48,7 +48,7 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 We predominantly used SQL querrying as demonstrated below;
 #### Formulas
   - Sales Amount Categorywise
-'''sql
+```sql
 SELECT  
 	category,
 	SUM(total_sale) AS Revenue_per_category,
@@ -57,7 +57,7 @@ FROM Retail_performance
 GROUP BY category
 ORDER BY 3;
 
-'''
+```
   - Count-used to get total number of transactions.
 ##### Functions
 ---
