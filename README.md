@@ -149,10 +149,9 @@ ORDER BY 4 DESC;
 #### Recommendations
 ---
 Based on the highlighted observations, we recommend the following courses of actions.
-  - Invest in marketing promotions to boost sales in the latter three quarters.
-  - Incentives should be offered on food and beverage category to boost sales.
-  - Each branch need to adopt its top selling category into a respective flagship outlet to bost sales.
-  - Profit margin need to be slightly slashed to 4% to reduce the price in order to try boost sales in the last three quarters.
+  - Intensify marketing promotions targeting youth and the elderly persons to boost sales in beauty products.
+  - Incentives should be offered on purchases worth over 1,000,00 to boost premium sales.
+  - Intensive marketing promotions and Incentives should be offered on Afternoon sales bidding to boost sales and traffic.
 
 #### Limitations
 ---
