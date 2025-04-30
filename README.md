@@ -134,7 +134,7 @@ ORDER BY Shift;
   - Electronics category was the highest selling category (Kshs. 313,810.00) revenue wise followed by clothing (Kshs. 311,070.00) and beauty (Kshs. 286,840.00). Clothing (701 		 
     items) recorded the most orders followed closely by electronics (684 items) then beauty (612 items).
   - Beauty products were mostly consumed by middle aged people (Average age 40 years)
-  - The profits were predetermined at a margin of 5%.
+  - Just over 15% of total orders recorded sale amounts of Kshs. 1,000.00 and above.
   - The company experienced boom in sales fo the first quarter then sales dwindeled in the latter quarters.
   - Foods and beverage was the top selling category during the year.
   - Branch sales were evenly distributed during the year.
