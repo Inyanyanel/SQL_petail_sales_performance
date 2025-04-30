@@ -156,5 +156,5 @@ Based on the highlighted observations, we recommend the following courses of act
 
 #### Limitations
 ---
-  - Three rows had several null values therefore deleted.
+  - Three rows had several null values therefore deleted from the dataset.
   - Ten rows had null age value therefore filled with average age of the entire dataset.
