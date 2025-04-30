@@ -8,7 +8,6 @@
 - [Data preparation](#data-preparation)
 - [Explanatory analysis](#explanatory-analysis)
 - [Data Analysis]($data-analysis)
-- [Functions](#functions)
 - [Findings and results]($findings-and-results)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
@@ -116,6 +115,28 @@ SELECT
 FROM Retail_performance
 GROUP BY category;
 ```
+-Shifts performance.
+```sql
+WITH Shift_orders
+AS
+	(
+	SELECT *,
+		CASE WHEN DATEPART(HOUR, sale_time)<12 THEN 'Morning'
+			 WHEN DATEPART(HOUR, sale_time) BETWEEN 12 AND 16 THEN 'Afternoon'
+			 ELSE 'Evening'
+		END AS Shift
+	FROM Retail_performance
+	)
+SELECT
+	Shift,
+	gender,
+	COUNT(*) AS No_of_orders,
+	SUM(total_sale) as Shift_sales
+FROM Shift_orders
+GROUP BY Shift, gender
+ORDER BY Shift;
+```
+
 #### Findings and results
 ---
   - January was the top selling month with Kshs. 75,160.51 while April the lowest at Kshs. 2,870.46.
