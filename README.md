@@ -127,7 +127,7 @@ SELECT
 	SUM(total_sale) as Shift_sales
 FROM Shift_orders
 GROUP BY Shift, gender
-ORDER BY Shift;
+ORDER BY 4 DESC;
 ```
 
 #### Findings and results
@@ -136,11 +136,15 @@ ORDER BY Shift;
     items) recorded the most orders followed closely by electronics (684 items) then beauty (612 items).
   - Beauty products were mostly consumed by middle aged people (Average age 40 years)
   - Just over 15% of total orders recorded sale amounts of Kshs. 1,000.00 and above.
-  - Ladies led the spending on clothing products (162,460) closely followed by men on Electronics (160,340). Ladies dominated men on expenditure on the rest of the products.
+  - Ladies led the spending on clothing products (162,460.00) closely followed by men on Electronics (160,340.00). Ladies dominated men on expenditure on the rest of the products.
   - July was the best selling month in year 2022 with monthly average revenue of 541.34 while February topped year 2023 with 535.53
-  - Branch sales were evenly distributed during the year.
-  - Payment modes of cash, credit card and e-wallet were evenly used across the period.
-  - Alexandria branch dominated on food and beverage sales (47%), Giza on home & lifestyle (43%), Cairo on health & beauty (39%).
+  - Client with customer_id 3 topped the list of premium clients with purchases amounting to 38,440.00 Followed by 1,5,2 and 4 with 30,750.00, 30,405.00, 25,295.00 and 23,580.00 
+    respectively.
+  - Clothing products topped the category performance with 1,785 orders and 149 customers followed by Electronics with 1,698 orders and 144 customers then Beauty with 1,535 orders and 
+    141 customers.
+  - Evening shifts recorded the highest sales 572,420.00 and customer traffic 1,275 followed by mornings with 259,900.00 and 558 visits. Afternoons recorded lowest sales of 79,400.00 
+    and client traffic of 164. Ladies dominated in the afternoons and evenings both on purchases and traffic while morning saw both genders share the spoils traffic wise with men 
+    slightly edging the ladies on purchases.
 
 #### Recommendations
 ---
