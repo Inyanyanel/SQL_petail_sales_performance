@@ -82,6 +82,22 @@ SELECT
 FROM Retail_performance
 GROUP BY category,gender;
 ```
+-Best selling months by monthly average each year.
+```sql
+SELECT Year,
+	Month,
+	Monthly_Average_Sales
+FROM (
+	SELECT
+		FORMAT(sale_date,'yyyy') AS Year,
+		FORMAT(sale_date,'MM') AS Month,
+		ROUND(AVG(total_sale),2) AS Monthly_Average_Sales,
+		RANK() OVER(PARTITION BY FORMAT(sale_date,'yyyy') ORDER BY ROUND(AVG(total_sale),2) DESC) AS _Rank
+	FROM Retail_performance
+	GROUP BY FORMAT(sale_date,'yyyy'), FORMAT(sale_date,'MM')
+	) Best_monthly_performance
+	WHERE _Rank=1;
+```
 #### Findings and results
 ---
   - January was the top selling month with Kshs. 75,160.51 while April the lowest at Kshs. 2,870.46.
