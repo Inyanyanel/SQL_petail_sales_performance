@@ -76,12 +76,12 @@ SELECT COUNT(DISTINCT(category)) AS No_of_Categories FROM Retail_performance;
 
 --Data Analysis & Key Business Metrics--
 
---1. All sales dae on 2022-11-05
+--1. All sales made on 2022-11-05
 
 SELECT * FROM Retail_performance
 WHERE sale_date='2022-11-05';
 
---Clothing Transactions with 2 or more items sold on November 2022--
+--2.Clothing Transactions with 2 or more items sold on November 2022--
 
 SELECT *
 FROM Retail_performance
@@ -89,7 +89,7 @@ WHERE category='Clothing'
 AND FORMAT(Sale_date, 'yyyy-MM')='2022-11'
 AND quantity>=4;
 
---Sales Amount Categorywise--
+--3.Sales Amount Categorywise--
 
 SELECT  
 	category,
@@ -100,7 +100,7 @@ GROUP BY category
 ORDER BY 3;
 
 
---Average Customer Age By Category--
+--3.Average Customer Age By Category--
 
 SELECT
 	category,
@@ -109,13 +109,13 @@ FROM Retail_performance
 WHERE category='Beauty'
 GROUP BY category;
 
---Transactions with sales worth over 1000--
+--5.Transactions with sales worth over 1000--
 
 SELECT * 
 FROM Retail_performance
 WHERE total_sale>1000;
 
---Transactions made by each gender and category respectivly--
+--6.Transactions made by each gender and category respectivly--
 SELECT
 	category,
 	gender,
@@ -123,7 +123,7 @@ SELECT
 FROM Retail_performance
 GROUP BY category,gender;
 
---Best selling months by monthly average each year--
+--7.Best selling months by monthly average each year--
 
 SELECT Year,
 	Month,
@@ -139,7 +139,7 @@ FROM (
 	) Best_monthly_performance
 	WHERE _Rank=1;
 
---Top 5 business customerwise--
+--8.Top 5 business customerwise--
 
 SELECT TOP 5
 	customer_id,
@@ -148,7 +148,7 @@ FROM Retail_performance
 GROUP BY customer_id
 ORDER BY SUM(total_sale) DESC;
 
---Number of customers who purchsed from each category--
+--9.Number of customers who purchsed from each category--
 
 SELECT
 	category,
@@ -157,7 +157,7 @@ SELECT
 FROM Retail_performance
 GROUP BY category;
 
---Orders per shift(Morning <1200hrs, Afternoon >=1200hrs & <=1700hrs, Evening >1700hrs--
+--10.Orders per shift(Morning <1200hrs, Afternoon >=1200hrs & <=1700hrs, Evening >1700hrs--
 
 WITH Shift_orders
 AS
