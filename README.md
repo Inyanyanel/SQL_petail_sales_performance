@@ -47,7 +47,7 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 ---
 We predominantly used SQL querrying as demonstrated below;
 #### Formulas
-  - Sales Amount Categorywise
+  - Sales Amount Categorywise.
 ```sql
 SELECT  
 	category,
@@ -58,12 +58,16 @@ GROUP BY category
 ORDER BY 3;
 
 ```
-  - Count-used to get total number of transactions.
-##### Functions
----
-  - Sumifs-used to get total sales and profits per category and salesper branch.
-  - Countifs-used to get total transactions and payment modes per category.
-  - Xlookup-used to get sales and units quantity per invoice during the year.
+-Average Customer Age For Beauty Category.
+```sql
+SELECT
+	category,
+	AVG(age) AS Average_age
+FROM Retail_performance
+WHERE category='Beauty'
+GROUP BY category;
+```
+
 
 #### Findings and results
 ---
