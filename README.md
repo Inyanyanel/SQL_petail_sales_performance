@@ -73,7 +73,15 @@ SELECT *
 FROM Retail_performance
 WHERE total_sale>1000;
 ```
-
+-Transactions made by each gender and category respectively.
+```sql
+SELECT
+	category,
+	gender,
+	COUNT(*) AS Transactions
+FROM Retail_performance
+GROUP BY category,gender;
+```
 #### Findings and results
 ---
   - January was the top selling month with Kshs. 75,160.51 while April the lowest at Kshs. 2,870.46.
