@@ -67,7 +67,12 @@ FROM Retail_performance
 WHERE category='Beauty'
 GROUP BY category;
 ```
-
+-Transactions with sales worth over 1000.
+```sql
+SELECT * 
+FROM Retail_performance
+WHERE total_sale>1000;
+```
 
 #### Findings and results
 ---
