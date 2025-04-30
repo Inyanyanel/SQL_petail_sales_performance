@@ -1,4 +1,4 @@
-# SQL_petail_sales_performance
+# SQL_Retail_Sales_Performance
 ## Table Of Contents
 ---
 
@@ -17,7 +17,7 @@
 ### Project Overview
 ---
 
-This data analysis project aims to provide insights into the sales performance of a supermarket in year 2019. We are  looking into various sales aspects seeking to identify the trends, gain a deeper understanding of the sales performance and make recommendations.
+This project aims to provide aims to provide quickfire business metrics seeking to identify the trends, gain a geveral overview of the sales performance to make  necessary recommendations.
 
 ### Data Sources
 ---
