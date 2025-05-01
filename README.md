@@ -32,7 +32,7 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 
 - Data loading and inspection.
 - Handling missing values.
-  Deleting rows with null values
+####Deleting rows with null values.
 ```sql
 DELETE FROM Retail_performance
 WHERE 
