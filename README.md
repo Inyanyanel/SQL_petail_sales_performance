@@ -31,8 +31,7 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 ---
 
 - Data loading and inspection.
-- Handling missing values.
-####Deleting rows with null values.
+- Handling missing values. Deleting rows with null values.
 ```sql
 DELETE FROM Retail_performance
 WHERE 
@@ -58,7 +57,13 @@ WHERE
 	OR
 	total_sale IS NULL;
 ```
-- Data cleaning, formatting and transformation.
+
+- Handling missing values. Replacing null values with average values.
+```sql
+UPDATE Retail_performance
+SET age=(SELECT AVG(AGE) FROM Retail_performance WHERE age IS NOT NULL)
+WHERE age IS NULL;
+```
 
 ### Data Analysis
 ---
