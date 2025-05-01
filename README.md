@@ -27,10 +27,8 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 
 - SQL - Used to clean, transform and analyse data.
 
-### Data preparation
+## Data cleaning and transformation.
 ---
-
-- Data loading and inspection.
 - Handling missing values. Deleting rows with null values.
 ```sql
 DELETE FROM Retail_performance
