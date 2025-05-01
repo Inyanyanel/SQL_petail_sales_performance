@@ -32,6 +32,32 @@ Retail sales Data: The primary dataset used for this analysis is the "Rtail_sale
 
 - Data loading and inspection.
 - Handling missing values.
+  Deleting rows with null values
+```sql
+DELETE FROM Retail_performance
+WHERE 
+	transactions_id IS NULL
+	OR
+	sale_date IS NULL
+	OR
+	sale_time IS NULL
+	OR
+	customer_id IS NULL
+	OR
+	gender IS NULL
+	OR
+	age IS NULL
+	OR
+	category IS NULL
+	OR
+	quantity  IS NULL
+	OR
+	price_per_unit IS NULL
+	OR
+	cogs IS NULL
+	OR
+	total_sale IS NULL;
+```
 - Data cleaning, formatting and transformation.
 
 ### Data Analysis
